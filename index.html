@@ -44,5 +44,41 @@
     }
   </script>
   
+  <h2>My JavaScript function</h2>
+
+<!-- 1 -->
+
+<p>A Cat is swaying</p>
+
+<p>JavaScript changes the value of the src attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='https://c.tenor.com/fq_Gq9U8K68AAAAM/ngao-zalo.gif'">Sway</button>
+
+<img id="myImage" src="https://c.tenor.com/fq_Gq9U8K68AAAAM/ngao-zalo.gif" style="width:100px" alt="a cat">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Stop</button>
+
+<!-- 2 -->
+<p>Your time now</p>
+<button onclick="getElementById('test').innerHTML=Date()">What time is it?</button>
+<p id="test"></p>
+
+<!--3-->
+
+<p id="math"></p>
+<script>
+var x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+function myFunction(a, b) {
+  return a * b;}
+
+</script>
+
+<p id="demo"></p>
+<script>
+const x = function (a, b) {return a * b};
+document.getElementById("demo").innerHTML = x(11, 12);
+</script>
+
 </body>
 </html>
